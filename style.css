@@ -1,0 +1,198 @@
+#page1{
+    background-image: url("/images/page1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page2{
+    background-color:#63cdda;
+}
+#page3{
+    background-color:#3dc1d3;
+}
+#page4{
+    background-color:#f3a683;
+}
+#page5{
+    background-color:#f7d794;
+}
+header{
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    position: sticky;
+    top:0;
+    width: 100%;
+
+}
+body{
+    margin:0;
+}
+
+section{
+    padding-top: 54px;
+    display: block;
+    background: #CFF;
+    height:100vh;
+    width: 100vw;
+    box-sizing:border-box;
+}
+
+ul{
+    list-style:none;
+}
+a{
+    color: lightblue; text-decoration: none;
+}
+a:hover {
+    color: lightslategray
+}
+h2 {
+    color: teal;
+    font-family: 'Lato', sans-serif;
+
+    font-size: 54px;
+
+    font-weight: 300;
+    text-align:center;
+    line-height: 58px;
+    margin: 0 0 58px;
+}
+h3 {
+    color: teal;
+    font-family: 'Lato', sans-serif;
+
+    font-size: 40px;
+
+    font-weight: 300;
+    text-align:center;
+    line-height: 58px;
+    margin: 0 0 58px;
+}
+h4 {
+    color: teal;
+    font-family: 'Lato', sans-serif;
+
+    font-size: 30px;
+
+    font-weight: 300;
+    text-align:center;
+    line-height: 58px;
+    margin: 0 0 58px;
+}
+#page1 h2,h3,h4{
+    text-align: right;
+    padding-right: 40px;
+    padding-top:  150px;
+    font-weight: bold;
+}
+p {
+    color: #adb7bd;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    text-indent: 30px;
+    margin: 0;
+}
+#header_nav {
+
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+            ' left_nav left_nav left_nav right_nav '
+            ' left_nav left_nav left_nav right_nav ';
+}
+.left_nav{
+    margin-top: 12px;
+}
+.left_nav p{
+    font-size: 25px;
+}
+.right_nav ul{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas:
+            ' inicio sobremi proyectos capacidades contacto ';
+}
+.about_me_pics li{
+    text-align: center;
+    padding: 10px;
+    box-shadow: 1px 1px;
+    background-color: whitesmoke;
+    border: 1px solid #e7e7e7;
+    border-radius: 15px;
+}
+
+
+.about_me_pics {
+     display: grid;
+     grid-template-areas:
+            '. pic1 pic2 .'
+            '. pic3 pic4 .';
+}
+.projects_pics li{
+    text-align: center;
+    padding: 10px;
+    box-shadow: 1px 1px;
+    background-color: whitesmoke;
+    border: 1px solid #e7e7e7;
+    border-radius: 15px;
+}
+.projects_pics{
+    display: grid;
+    grid-template-areas:
+            '. proj1 proj2 .'
+            '. proj3 proj4 .';
+}
+.container{
+    display: grid;
+
+    grid-template-areas:
+            '. . .name message message  . . .'
+            '. . .lname message message . .  .'
+            '. . .phone message message . . .'
+            '. . .send send send . . .';
+    padding: 100px;
+    margin:auto;
+    width:40%;
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    justify-content: space-evenly;
+}
+
+
+@media (max-width: 800px){
+    .left_nav{
+        text-align: center;
+        margin-left: 20px;
+    }
+    #header_nav {
+
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas:
+            ' left_nav  left_nav   '
+            ' right_nav right_nav ';
+    }
+
+}
+@media (max-width: 600px){
+    .about_me_pics {
+        display: grid;
+        grid-template-areas:
+            ' pic1 '
+            ' pic2 '
+            ' pic3 '
+            ' pic4 ';
+    }
+    .projects_pics{
+        display: grid;
+        grid-template-areas:
+            ' proj1 '
+            ' proj2 '
+            ' proj3 '
+            ' proj4 ';
+    }
+
+}
